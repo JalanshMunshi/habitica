@@ -26,9 +26,9 @@ ENV APPLE_AUTH_CLIENT_ID 9Q9SMRMCNN.com.habitrpg.ios.Habitica
 RUN npm install -g gulp-cli mocha
 
 # Clone Habitica repo and install dependencies
-RUN mkdir -p /usr/src/habitrpg
-WORKDIR /usr/src/habitrpg
-RUN git clone --branch release --depth 1 https://github.com/HabitRPG/habitica.git /usr/src/habitrpg
+# RUN mkdir -p /usr/src/habitrpg
+WORKDIR /workspace/habitrpg
+# RUN git clone --branch release --depth 1 https://github.com/HabitRPG/habitica.git /usr/src/habitrpg
 RUN npm set unsafe-perm true
 RUN npm install
 
